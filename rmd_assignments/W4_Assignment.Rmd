@@ -1,0 +1,52 @@
+---
+title: 'W4: Start with R'
+output: html_document
+---
+
+##Exercise 1: 
+Use R to figure out how many elements in the vector below are greater than 2 . (You need to filter out the NAs first)
+rooms <- c(1, 2, 1, 3, 1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1, 2, 1, 7, 1, NA)
+
+```{r}
+#create object
+rooms <- c(1, 2, 1, 3, 1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1, 2, 1, 7, 1, NA)
+
+#remove na's
+rooms_clean <- na.omit(rooms)
+rooms_clean
+
+#count how many elements are greater than 2
+sum(rooms_clean > 2)
+
+```
+
+##Exercise 2: 
+What is the result of running median() function on the above 'rooms' vector? (again, best remove the NAs)
+
+```{r}
+#apply median function 
+median(rooms_clean)
+
+```
+
+The median() function on the "rooms" vector (or in my case rooms_clean, which has no NA's) gives 1.5. 
+
+##Exercise 3:
+Inside your R Project (.Rproj), install the 'tidyverse' package and use the download.file() and read_csv() function to read the SAFI_clean.csv dataset into your R project as 'interviews' digital object (see instructions in https://datacarpentry.org/r-socialsci/setup.html and 'Starting with Data' section). Take a screenshot of your RStudio interface showing a) the script you used to create the object, b) the 'interviews' object in the Environment and the c) structure of your R project in the bottom right Files pane. Save the screenshot as an image and put it in your AUID_lastname_firstname repository inside our Github organisation (github.com/Digital-Methods-HASS). Place here the URL leading to the screenshot in your repository.
+
+```{r}
+library(tidyverse)
+
+setwd("~/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole")
+
+download.file("https://ndownloader.figshare.com/files/11492171",
+              "data/SAFI_clean.csv", mode = "wb")
+
+interviews <- read_csv("data/SAFI_clean.csv", na = "NULL")
+
+```
+
+![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/environment.png)
+![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/files.png)
+![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/script.png)
+
