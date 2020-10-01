@@ -1,7 +1,9 @@
-\#\#Exercise 1: Use R to figure out how many elements in the vector
-below are greater than 2 . (You need to filter out the NAs first) rooms
-\<- c(1, 2, 1, 3, 1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1,
-2, 1, 7, 1, NA)
+Exercise 1:
+-----------
+
+Use R to figure out how many elements in the vector below are greater
+than 2 . (You need to filter out the NAs first) rooms \<- c(1, 2, 1, 3,
+1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1, 2, 1, 7, 1, NA)
 
 ``` r
 #create object
@@ -25,8 +27,11 @@ sum(rooms_clean > 2)
 
     ## [1] 8
 
-\#\#Exercise 2: What is the result of running median() function on the
-above ‘rooms’ vector? (again, best remove the NAs)
+Exercise 2:
+-----------
+
+What is the result of running median() function on the above ‘rooms’
+vector? (again, best remove the NAs)
 
 ``` r
 #apply median function 
@@ -38,10 +43,13 @@ median(rooms_clean)
 The median() function on the “rooms” vector (or in my case rooms\_clean,
 which has no NA’s) gives 1.5.
 
-\#\#Exercise 3: Inside your R Project (.Rproj), install the ‘tidyverse’
-package and use the download.file() and read\_csv() function to read the
-SAFI\_clean.csv dataset into your R project as ‘interviews’ digital
-object (see instructions in
+Exercise 3:
+-----------
+
+Inside your R Project (.Rproj), install the ‘tidyverse’ package and use
+the download.file() and read\_csv() function to read the SAFI\_clean.csv
+dataset into your R project as ‘interviews’ digital object (see
+instructions in
 <a href="https://datacarpentry.org/r-socialsci/setup.html" class="uri">https://datacarpentry.org/r-socialsci/setup.html</a>
 and ‘Starting with Data’ section). Take a screenshot of your RStudio
 interface showing a) the script you used to create the object, b) the
