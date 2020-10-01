@@ -11,16 +11,7 @@ rooms <- c(1, 2, 1, 3, 1, NA, 3, 1, 3, 2, 1, NA, 1, 8, 3, 1, 4, NA, 1, 3, 1, 2, 
 
 #remove na's
 rooms_clean <- na.omit(rooms)
-rooms_clean
-```
 
-    ##  [1] 1 2 1 3 1 3 1 3 2 1 1 8 3 1 4 1 3 1 2 1 7 1
-    ## attr(,"na.action")
-    ## [1]  6 12 18 26
-    ## attr(,"class")
-    ## [1] "omit"
-
-``` r
 #count how many elements are greater than 2
 sum(rooms_clean > 2)
 ```
