@@ -48,7 +48,3 @@ interviews <- read_csv("data/SAFI_clean.csv", na = "NULL")
 
 ```
 
-![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/environment.png)
-![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/files.png)
-![Environment](/Users/nicoledwenger/Documents/University/5SEMESTER/CULTDATA/RStudio/au601190_dwenger_nicole/pictures/script.png)
-
