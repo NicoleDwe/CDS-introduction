@@ -1,6 +1,8 @@
 ---
 title: 'W4: Start with R'
-output: html_document
+output:   
+  md_document:
+    variant: markdown_github
 ---
 
 ##Exercise 1: 
