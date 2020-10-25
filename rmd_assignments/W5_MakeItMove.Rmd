@@ -148,7 +148,7 @@ The much smoother movement in Option 2 will be much more noticeable if you add a
 **Q5. Can you add a title to one or both of the animations above that will change in sync with the animation? [hint: search labeling for transition_states() and transition_time() functions respectively]**
 ```{r}
 
-#transition_state
+# transition_state
 anim <- anim + labs(title = "Year {next_state}")
 anim
 
