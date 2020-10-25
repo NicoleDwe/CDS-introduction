@@ -2,7 +2,9 @@
 title: "HW6 - Loops + Functions"
 author: "Nicole Dwenger"
 date: "25/10/2020"
-output: html_document
+output:   
+  md_document:
+    variant: gfm
 ---
 
 ## Preparations

@@ -61,9 +61,9 @@ gdp_calc(data, "Denmark", 2007)
 **Write a script that loops over each country in the gapminder dataset,
 tests whether the country starts with a ‘B’ , and print out whether the
 life expectancy is smaller than 50, between 50 and 70, or greater than
-70.** \*Note: I was unsure whether life expectancy here means “mean life
+70.** *Note: I was unsure whether life expectancy here means “mean life
 expectancy” (just like in task 3) or whether it means “one of the life
-expectancy values” - but I assumed the first one.
+expectancy values” - but I assumed the first one.*
 
 ``` r
 # print the life expectancy test if a country does start with B
