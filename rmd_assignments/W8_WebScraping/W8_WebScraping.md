@@ -3,6 +3,12 @@ library(pacman)
 pacman::p_load(tidyverse, rvest, magrittr, scales, knitr, lubridate, tibble, gdata)
 ```
 
+# Week 8: Webscraping
+
+I decided to scrape some data from [Spotify
+Charts](https://spotifycharts.com/). For this, I used this
+[Tutorial](https://datacritics.com/2018/03/20/scrape-it-yourself-spotify-charts/).
+
 ## 1\. Defining urls to scrape from
 
 ``` r
@@ -213,9 +219,11 @@ data %>%
   filter(track == "Roses - Imanbek Remix" | track == "The Box" | track == "Blinding Lights" | track == "ROCKSTAR (feat. Roddy Ricch)" | track == "Dance Monkey") %>%
   group_by(track, date) %>% 
   summarise(total = sum(streams), .groups = "drop_last") %>%
-  ggplot(aes(y = total, x = date, color = track)) +
-    geom_point() +
+  ggplot(aes(y = total, x = date, color = track, group = track)) +
+    #geom_point() +
     geom_line() +
+    scale_x_date(date_breaks = "1 month", date_labels = "%b") +
+    theme(legend.position = c(0.8, 0.8)) +
     labs(x = "Time (in 2020)", y = "Total Streams", color = "Track", title = "Streams of 5 Top Tracks across countries")
 ```
 
