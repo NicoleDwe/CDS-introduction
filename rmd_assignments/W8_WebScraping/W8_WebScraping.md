@@ -1,13 +1,14 @@
+# Week 8: Webscraping
+
+I decided to scrape some data from [Spotify
+Charts](https://spotifycharts.com/), and make some plots with the data.
+To do this, I followed this
+[Tutorial](https://datacritics.com/2018/03/20/scrape-it-yourself-spotify-charts/).
+
 ``` r
 library(pacman)
 pacman::p_load(tidyverse, rvest, magrittr, scales, knitr, lubridate, tibble, gdata)
 ```
-
-# Week 8: Webscraping
-
-I decided to scrape some data from [Spotify
-Charts](https://spotifycharts.com/). For this, I used this
-[Tutorial](https://datacritics.com/2018/03/20/scrape-it-yourself-spotify-charts/).
 
 ## 1\. Defining urls to scrape from
 
