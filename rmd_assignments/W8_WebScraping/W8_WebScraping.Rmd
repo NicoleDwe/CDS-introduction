@@ -187,7 +187,7 @@ data %>%
 
 ```
 
-#7. Development of 5 songs across all countries
+# 7. Development of 5 songs across all countries
 ```{r}
 
 data %>%

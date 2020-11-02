@@ -213,7 +213,7 @@ data %>%
 
 ![](W8_WebScraping_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
-\#7. Development of 5 songs across all countries
+# 7\. Development of 5 songs across all countries
 
 ``` r
 data %>%
