@@ -3,7 +3,7 @@ title: 'W4: Start with R'
 # output:   
 #   md_document:
 #     variant: markdown_github
-output: pdf_document
+output: html_document
 ---
 
 ## Exercise 1: 

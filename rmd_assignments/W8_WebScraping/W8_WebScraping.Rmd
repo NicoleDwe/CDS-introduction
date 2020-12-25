@@ -2,9 +2,10 @@
 title: "W8_WebScraping"
 author: "Nicole Dwenger"
 date: "2020/11/01"
-output:   
-  md_document:
-    variant: gfm
+# output:   
+#   md_document:
+#     variant: gfm
+output: pdf_document
 ---
 
 # Week 8: Webscraping 
