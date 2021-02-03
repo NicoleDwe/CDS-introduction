@@ -28,13 +28,17 @@ To analyse e.g. density of tweets in Denmark you need:
 
 **4.** Create a standalone .html map in Leaflet showing at least basic topography and relief, and load in the table of points. Make sure she can see the FeatureID, FeatureType and Description attributes when she hovers over the point markers. 
 
+```{r global-options, include=FALSE}
+# knitr::opts_chunk$set(include = TRUE,  results = "hide", fig.show = "hide")
+```
+
 ```{r message=FALSE}
 # packages
 library(pacman)
 p_load(leaflet, htmltools, htmlwidgets, tidyverse, here)
 
 # load data
-rcf <- read_csv(here("spatial_analytics/RCFeature.csv"))
+rcf <- read_csv(here("spatial_analytics/week_1/RCFeature.csv"))
 rcf <- rcf %>% filter(!is.na(Longitude))
 
 ```
@@ -125,8 +129,8 @@ cluster_map
 
 **Save final map:**
 ```{r}
-# library(htmlwidgets)
-# saveWidget(size_map, "map.html", selfcontained = TRUE)
+library(htmlwidgets)
+saveWidget(size_map, "map.html", selfcontained = TRUE)
 ```
 
 
