@@ -1,7 +1,7 @@
 ---
 title: "Assignment 1: Interactive Maps with Leaflet"
 author: "Nicole Dwenger"
-date: "2/2/2021"
+date: "2021/02/02"
 # output: github_document
 # always_allow_html: true
 output: html_document
@@ -29,7 +29,7 @@ To analyse e.g. density of tweets in Denmark you need:
 **4.** Create a standalone .html map in Leaflet showing at least basic topography and relief, and load in the table of points. Make sure she can see the FeatureID, FeatureType and Description attributes when she hovers over the point markers. 
 
 ```{r global-options, include=FALSE}
-# knitr::opts_chunk$set(include = TRUE,  results = "hide", fig.show = "hide")
+#knitr::opts_chunk$set(include = TRUE,  results = "hide", fig.show = "hide")
 ```
 
 ```{r message=FALSE}
